@@ -10,6 +10,7 @@ import UIKit
 class SepetHucre: UICollectionViewCell {
     
     @IBOutlet weak var labelToplam: UILabel!
+    
     @IBOutlet weak var imageViewResim: UIImageView!
     
     @IBOutlet weak var labelUrunAd: UILabel!

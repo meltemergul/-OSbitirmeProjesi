@@ -39,8 +39,6 @@ class SepetRepository {
                             print("Sepet verisi boş")
                         }
                     } else {
-                        // Eğer API'den bir hata mesajı gelirse, yazdırıyoruz
-                     
                     }
                 } catch {
                     print("Decoding error: \(error)")

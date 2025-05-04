@@ -55,25 +55,23 @@ extension Sepetim: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                        hucre.imageViewResim.kf.setImage(with: url)
                    }
                }
-               
-            
+              
                hucre.labelUrunAd.text = sepet.ad
                if let fiyat = sepet.fiyat {
                    hucre.labelFiyat.text = "\(fiyat)₺"
                }
-        if let adet = sepet.siparisAdeti {
+        if let fiyat = sepet.fiyat, let adet = sepet.siparisAdeti {
             hucre.labelAdet.text = "\(adet) adet"
+            let toplamFiyat = fiyat * adet
+            hucre.labelToplam.text = "Toplam: \(String(format: "%.2f", Double(toplamFiyat)))₺"
         }
      
                return hucre
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = collectionView.frame.size.width // Hücrenin genişliği
+        let itemWidth = collectionView.frame.size.width
            let sepet = sepetListesi[indexPath.row]
-           
-           // Burada her hücrenin yüksekliğini içerik miktarına göre dinamik olarak belirleyebilirsiniz
-           let itemHeight: CGFloat = sepet.ad?.count ?? 0 > 50 ? 200 : 120 // Örneğin, başlık uzunluğuna göre yükseklik
-
+           let itemHeight: CGFloat = sepet.ad?.count ?? 0 > 50 ? 200 : 120
            return CGSize(width: itemWidth, height: itemHeight)
     }
     func collectionView(_ collectionView: UICollectionView,
