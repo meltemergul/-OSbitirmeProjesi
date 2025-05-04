@@ -6,12 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		505A687D2DC7551E003D2CC0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 505A687C2DC7551E003D2CC0 /* Lottie */; };
+		5062C3E12DC699E300F11A2C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5062C3E02DC699E300F11A2C /* Alamofire */; };
+		5062C3E42DC699F300F11A2C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5062C3E32DC699F300F11A2C /* RxSwift */; };
+		5062C3E62DC699FD00F11A2C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5062C3E52DC699FD00F11A2C /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		50BC036E2DC254F2004DE886 /* EcommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		50BC03802DC254F4004DE886 /* Exceptions for "EcommerceApp" folder in "EcommerceApp" target */ = {
+		501490F32DC60E0000D8E67E /* Exceptions for "EcommerceApp" folder in "EcommerceApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +31,7 @@
 		50BC03702DC254F2004DE886 /* EcommerceApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				50BC03802DC254F4004DE886 /* Exceptions for "EcommerceApp" folder in "EcommerceApp" target */,
+				501490F32DC60E0000D8E67E /* Exceptions for "EcommerceApp" folder in "EcommerceApp" target */,
 			);
 			path = EcommerceApp;
 			sourceTree = "<group>";
@@ -36,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5062C3E62DC699FD00F11A2C /* Kingfisher in Frameworks */,
+				5062C3E42DC699F300F11A2C /* RxSwift in Frameworks */,
+				5062C3E12DC699E300F11A2C /* Alamofire in Frameworks */,
+				505A687D2DC7551E003D2CC0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,10 @@
 			);
 			name = EcommerceApp;
 			packageProductDependencies = (
+				5062C3E02DC699E300F11A2C /* Alamofire */,
+				5062C3E32DC699F300F11A2C /* RxSwift */,
+				5062C3E52DC699FD00F11A2C /* Kingfisher */,
+				505A687C2DC7551E003D2CC0 /* Lottie */,
 			);
 			productName = EcommerceApp;
 			productReference = 50BC036E2DC254F2004DE886 /* EcommerceApp.app */;
@@ -107,6 +122,12 @@
 			);
 			mainGroup = 50BC03652DC254F2004DE886;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				501490BF2DC60D7F00D8E67E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5062C3DF2DC699E300F11A2C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5062C3E22DC699F300F11A2C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				505A687B2DC7551E003D2CC0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50BC036F2DC254F2004DE886 /* Products */;
 			projectDirPath = "";
@@ -147,6 +168,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcommerceApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShopSmart;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -174,6 +196,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcommerceApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShopSmart;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,6 +356,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		501490BF2DC60D7F00D8E67E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+		505A687B2DC7551E003D2CC0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+		5062C3DF2DC699E300F11A2C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		5062C3E22DC699F300F11A2C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		505A687C2DC7551E003D2CC0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 505A687B2DC7551E003D2CC0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		5062C3E02DC699E300F11A2C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5062C3DF2DC699E300F11A2C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5062C3E32DC699F300F11A2C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5062C3E22DC699F300F11A2C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		5062C3E52DC699FD00F11A2C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 501490BF2DC60D7F00D8E67E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50BC03662DC254F2004DE886 /* Project object */;
 }
